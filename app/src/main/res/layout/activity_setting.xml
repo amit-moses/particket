@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserArea"
+    android:id="@+id/drawerLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/capsule4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/setname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="set name"
+                android:background="@android:color/transparent"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/capsule"
+                    android:id="@+id/et_firstname"
+                    android:inputType="text"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:hint="First name"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:background="@drawable/capsule"
+                    android:id="@+id/et_lastname"
+                    android:inputType="text"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:hint="Last name"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnsetname"
+                    android:text="save"
+                    android:background="@drawable/capsule1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/capsule4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/setpass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="set Password"
+                android:background="@android:color/transparent"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/capsule"
+                    android:id="@+id/et_pass1"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:hint="Password"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:background="@drawable/capsule"
+                    android:id="@+id/et_pass2"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:hint="Password again"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnsetpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/capsule1"
+                    android:text="save" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/capsule4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/setback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="set Profile picture"
+                android:background="@android:color/transparent"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/a3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click on the image"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:id="@+id/selectpic"
+                    android:background="#fff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
+                <Button
+                    android:id="@+id/btnsetback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/capsule1"
+                    android:text="save" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="#000"
+        app:itemIconTint="#000"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_user"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

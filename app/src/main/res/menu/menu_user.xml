@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/events"
+        android:title="My Events"
+        android:id="@+id/menu_a"/>
+    <item
+        android:icon="@drawable/ticket"
+        android:title="Sale Tickets"
+        android:id="@+id/menu_b"/>
+    <item
+        android:icon="@drawable/ticketing"
+        android:title="Ticketing Events"
+        android:id="@+id/menu_c"/>
+    <item
+        android:icon="@drawable/customers1"
+        android:title="My Customers"
+        android:id="@+id/menu_d"/>
+    <item
+        android:icon="@drawable/setting"
+        android:title="Setting"
+        android:id="@+id/menu_e"/>
+    <item android:title="Log Out"
+        android:id="@+id/menu_f"/>
+</menu>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000">
+    <LinearLayout
+        android:background="@drawable/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/a1">
+            <EditText
+                android:background="@drawable/capsule"
+                android:id="@+id/et_email"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <EditText
+                android:background="@drawable/capsule"
+                android:id="@+id/et_password1"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="@drawable/capsule"
+                android:id="@+id/et_password2"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Password again"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <Button
+                    android:textColor="#fff"
+                    android:background="@drawable/capsule1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="next"
+                    android:id="@+id/btn_next"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/a2"
+            android:visibility="gone">
+            <EditText
+                android:background="@drawable/capsule"
+                android:id="@+id/et_firstname"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="First name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp" />
+
+            <EditText
+                android:background="@drawable/capsule"
+                android:id="@+id/et_lastname"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:hint="Last name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <Button
+                    android:layout_marginRight="50dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/capsule1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="back"
+                    android:id="@+id/btn_back"/>
+
+                <Button
+                    android:id="@+id/btn_reg"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/capsule1"
+                    android:text="Register"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

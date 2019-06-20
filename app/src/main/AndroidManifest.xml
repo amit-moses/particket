@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.particket.particket">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Customers" />
+        <activity android:name=".EditMyEvent" />
+        <activity android:name=".EventTicket" />
+        <activity android:name=".Login" />
+        <activity android:name=".MyCustomers" />
+        <activity android:name=".MyEventInfo" />
+        <activity android:name=".MyEvents" />
+        <activity android:name=".MySalesEvents" />
+        <activity android:name=".NewEvent" />
+        <activity android:name=".Register" />
+        <activity android:name=".Scanner1" />
+        <activity android:name=".Scanner2" />
+        <activity android:name=".ScannerTicketing" />
+        <activity android:name=".SellersPayment" />
+        <activity android:name=".Ticketing" />
+        <activity android:name=".UserArea" />
+        <activity android:name=".Setting" />
+        <activity android:name=".Scanner3"></activity>
+    </application>
+
+</manifest>

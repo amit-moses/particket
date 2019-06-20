@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserArea"
+    android:id="@+id/drawerLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/capsule0"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:hint="Search customer"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btn_scan"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/capsule1"
+                android:drawableRight="@drawable/btn_scan" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+            <Button
+                android:id="@+id/a1"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:text="ALL"
+                android:background="@drawable/capsule1"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/a2"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:text="BY EVENT"
+                android:background="@drawable/capsule0"/>
+            <Button
+                android:id="@+id/a3"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:text="Chargeable"
+                android:background="@drawable/capsule0"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:itemTextColor="#000"
+        app:itemIconTint="#000"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_user"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

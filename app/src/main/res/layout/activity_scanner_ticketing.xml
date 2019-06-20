@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScannerTicketing"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_name"
+        android:text="event name"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:textSize="25sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_date"
+        android:text="event name"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:textColor="#000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:id="@+id/last"
+            android:text="Cancel last action"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textSize="17sp"
+            android:background="@color/colorPrimary"
+            android:textColor="#000"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_weight="10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:text="cancel"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scan">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ticketing is closed \n The manager hasn't opened the ticketing"
+            android:textSize="18sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/camera_off"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cameraoff"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera permission is off"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>
